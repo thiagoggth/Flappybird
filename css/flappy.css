@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+.content {
+  background: #273849;
+  text-align: center;
+}
+
+.content h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.jogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content h2 {
+  font-size: 50px;
+  position: absolute;
+  color: red;
+  font-weight: normal;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid red;
+  width: 500px;
+  z-index: 999;
+  display: none;
+}
+
+[wm-flappy] {
+  position: relative;
+  border: 5px solid dodgerblue;
+  height: 700px;
+  width: 1200px;
+  margin: 15px;
+  background-color: deepskyblue;
+  overflow: hidden;
+}
+
+.passaro {
+  position: absolute;
+  width: 60px;
+  left: calc(50% - 30px);
+  height: 40px;
+  background-color: red;
+}
+
+.par-de-barreiras {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.barreira {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.barreira .borda {
+  height: 30px;
+  width: 130px;
+  background: linear-gradient(90deg, #639301, #a5e82e);
+  border: 2px solid black;
+}
+
+.barreira .corpo {
+  height: 150px;
+  width: 110px;
+  background: linear-gradient(90deg, #639301, #a5e82e);
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.progresso {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: white;
+  font-size: 50px;
+  z-index: 100;
+}
